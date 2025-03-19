@@ -1,0 +1,9 @@
+{
+  "name": "guess_my_number",
+  "description": "Guess Number App",
+  "author": "Mihraç Comart",
+  "version": "1.0.0",
+  "default": "index.html",
+  "scripts": {},
+  "license": "ISC"
+}
