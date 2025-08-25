@@ -1,4 +1,4 @@
-'use strict';
+"use strict"
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
@@ -10,20 +10,17 @@ const displayMessage = function (message) {
     document.querySelector(".message").textContent = message;
 }
 
-
-// Click the check
 document.querySelector(".check").addEventListener("click",
     function () {
 
         guess = Number(document.querySelector(".guess").value);
 
-        // Not is input
         if (!guess) {
             displayMessage("No Number");
         }
 
-        // İf the number entered is not a secret number
         else if (guess !== secretNumber) {
+
             if (score > 1) {
                 displayMessage(guess > secretNumber ? "Too High!" : "Too Low!");
 
@@ -38,7 +35,6 @@ document.querySelector(".check").addEventListener("click",
             }
         }
 
-        // Player is win
         else if (guess === secretNumber) {
             displayMessage("Correct Number");
 
@@ -56,8 +52,6 @@ document.querySelector(".check").addEventListener("click",
         }
     });
 
-
-// Click the again
 document.querySelector(".again").addEventListener("click",
     function () {
 

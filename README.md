@@ -1,3 +1,7 @@
 # Guess My Number Project
 
-Find the given number by guessing.
+Used Technologies;
+
+     1) HTML 5
+     2) CSS 3
+     3) JavaScript
